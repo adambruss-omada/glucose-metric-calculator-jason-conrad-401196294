@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module GlucoseMetricsCalculator
   def average_week
     levels = levels_from_week
@@ -12,27 +14,27 @@ module GlucoseMetricsCalculator
   end
 
   def time_below_range_week
-    levels = levels_from_week 
+    levels = levels_from_week
 
-    (time_below_range(levels).to_f / levels.count.to_f) * 100
+    (time_below_range(levels).to_f / levels.count) * 100
   end
 
   def time_below_range_month(month = Time.now.month)
     levels = levels_from_month(month)
 
-    (time_below_range(levels).to_f / levels.count.to_f) * 100
+    (time_below_range(levels).to_f / levels.count) * 100
   end
 
   def time_above_range_week
     levels = levels_from_week
 
-    (time_above_range(levels).to_f / levels.count.to_f) * 100
+    (time_above_range(levels).to_f / levels.count) * 100
   end
 
   def time_above_range_month(month)
     levels = levels_from_month(month)
 
-    (time_above_range(levels).to_f / levels.count.to_f) * 100
+    (time_above_range(levels).to_f / levels.count) * 100
   end
 
   def levels_from_week
@@ -52,5 +54,4 @@ module GlucoseMetricsCalculator
   def time_above_range(levels)
     levels.count { |level| level > 180 }
   end
-
 end
