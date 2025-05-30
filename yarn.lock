@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"18@0.0.0":
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/18/-/18-0.0.0.tgz#a3d0f4a3716c60c77f4158d8b53262049c6c2082"
+  integrity sha512-2SPMA/ciHy16yY4uVXDrW8q7nLwb2F2Vrt8Qz5OiVo9cyC8Wo8/rwC2hDzbqlTXhIwzt2Y4yJRLem6XMNbT/3A==
+
 "@esbuild/aix-ppc64@0.25.2":
   version "0.25.2"
   resolved "https://registry.yarnpkg.com/@esbuild/aix-ppc64/-/aix-ppc64-0.25.2.tgz#b87036f644f572efb2b3c75746c97d1d2d87ace8"
@@ -180,6 +185,18 @@ esbuild@^0.25.2:
     "@esbuild/win32-arm64" "0.25.2"
     "@esbuild/win32-ia32" "0.25.2"
     "@esbuild/win32-x64" "0.25.2"
+
+node-bin-setup@^1.0.0:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/node-bin-setup/-/node-bin-setup-1.1.4.tgz#e5a666044152b54d8d84b95297977ae07fd04047"
+  integrity sha512-vWNHOne0ZUavArqPP5LJta50+S8R261Fr5SvGul37HbEDcowvLjwdvd0ZeSr0r2lTSrPxl6okq9QUw8BFGiAxA==
+
+node@^22.16.0:
+  version "22.16.0"
+  resolved "https://registry.yarnpkg.com/node/-/node-22.16.0.tgz#2ef9624df30ea9670d28e8b83c4ed584291cfaa0"
+  integrity sha512-rJlZ29rJLShrkDJrvLUfuxMJT5in2o1C0PhOPjZI9yHnctqk9m85sSyoAdhkN98Xb14NeobmCiIKFWqT2E1+bA==
+  dependencies:
+    node-bin-setup "^1.0.0"
 
 react-dom@^19.1.0:
   version "19.1.0"
